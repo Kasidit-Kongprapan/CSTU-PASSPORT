@@ -1,0 +1,135 @@
+body{
+    background-image: url(2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+    h1 {font-style: italic;}
+    h2 {color: white; font-family: serif;} 
+    h3 {color: brown;font-family:  serif;}
+    h4 {color:  brown;font-family: serif;}
+
+    .neonText 
+    {
+        position: absolute;
+    top: -450px;
+    left: 15px;
+    text-align: center;
+    animation: flicker 1.5s infinite alternate;
+    color: #fff;
+    }
+    @keyframes flicker {
+
+0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+    text-shadow:
+    0 0 4px #fff,
+    0 0 11px #fff,
+    0 0 19px #fff,
+    0 0 40px #ff00ff,
+    0 0 80px #ff00ff,
+    0 0 90px #ff00ff,
+    0 0 100px #ff00ff,
+    0 0 150px #ff00ff;
+
+}
+
+20%, 24%, 55% {        
+    text-shadow: none;
+}    
+}
+    .headtext
+    {
+    text-align: center;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    bottom: auto;
+    white-space: nowrap;
+    }
+
+    .back
+    {
+     display: block;
+     margin: 0 auto;
+     width: 40%;
+    }
+    .myself
+    {
+        object-fit: cover;
+        border-radius: 10px;
+        position: absolute;
+        width: 30%;
+        height: 40%;
+        top: 20%;
+        left: 20%;
+    }
+    .backimg
+    {
+        filter: blur(1px);
+        backdrop-filter: blur(10px);
+        opacity: 0.8;
+        object-fit: fill;
+    position: absolute;
+    box-shadow: 0px 0px 20px 20px #0b668a;
+    border-radius: 10px;
+    width: 80%;
+    height: 70%;
+    top: 20%;
+    left: 10%;
+    }
+    .centered
+    {
+    position: absolute;
+    top: 70%;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    }
+    .video
+    {
+    object-fit: cover;
+    position: absolute;
+    height: 25%;
+    width: 20%;
+    top: 37%;
+    left: 50%;
+    z-index: 2;
+    border-radius: 10px;
+    background-color: rgb(44, 44, 44);
+    }
+    .contact
+    {
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: grey;
+    }
+    .endnavbar{    
+    box-shadow:0px 0px 8px 10px #000000;
+    border-radius: 10px;
+    margin-top: 70%;
+    text-align: left;
+    background-color: rgb(134, 29, 16);
+    display: flex;
+    color: white;
+    position: relative;
+    }
+
+    .ulsecond{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    list-style: none;
+    }
+
+    .ulsecond li{
+    margin: 0 1rem;
+    width: 1000%;
+    }
