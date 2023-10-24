@@ -3,12 +3,54 @@
     h2 {color: white; font-family: serif;} 
     h3 {color: brown;font-family:  serif;}
     h4 {color:  brown;font-family: serif;}
+    
+    [class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+    /*  mobile : */
+[class*="col-"] {
+    width: 100%;
+  }
+
+  @media only screen and (min-width: 600px) {
+    /* tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  }
+  @media only screen and (min-width: 768px) {
+    /*  desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
 
     .neonText 
     {
         position: absolute;
-    top: -450px;
-    left: 15px;
+        left: 0;
+        bottom: 0;
+        width: 100%;
     text-align: center;
     animation: flicker 1.5s infinite alternate;
     color: #fff;
@@ -38,7 +80,7 @@
     text-align: center;
     transform: translate(-50%,-50%);
     position: absolute;
-    top: 60%;
+    top: 30%;
     left: 40%;
     bottom: auto;
     white-space: nowrap;
@@ -104,23 +146,25 @@
     color: white;
     background-color: grey;
     }
-    .endnavbar{    
-    box-shadow:0px 0px 8px 10px #000000;
-    border-radius: 10px;
-    margin-top: 70%;
-    text-align: left;
-    background-color: rgb(134, 29, 16);
-    display: flex;
-    color: white;
-    position: relative;
+    .endnavbar{  
+      box-shadow:0px 0px 8px 10px #000000;
+      border-radius: 20px;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: rgb(95, 5, 5);
+      color: white;
+      text-align: left;
+  
     }
 
     .ulsecond{
-    width: 80%;
-    display: flex;
+    width: 100%;
     justify-content: center;
     align-items: center; 
     list-style: none;
+    display: flex;
     }
 
     .ulsecond li{
